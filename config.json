@@ -1,0 +1,36 @@
+{
+    "contentdir": "content",
+    "layoutdir": "layouts",
+    "publishdir": "public",
+    "builddrafts": false,
+
+    "baseurl": "/",
+    "canonifyurls": true,
+    "permalinks": {
+        "post": ":year/:month/:day/:title/",
+        "fixed": ":title/"
+    },
+
+    "markup": {
+        "goldmark": {
+            "extensions": {
+                "typographer": true
+            },
+            "renderer": {
+                "unsafe": true
+            }
+        }
+    },
+
+    "pygmentsuseclasses": true,
+
+    "params": {
+        "Title": "ecn",
+        "Tagline": "express",
+        "Author": "ecn",
+        "DateForm": "Jan 2 2006",
+        "Github": {
+            "Head": "master"
+        }
+    }
+}
